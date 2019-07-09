@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.box1::after{
+    position: relative;
+    display: block;
+    content: "";
+    clear: both;
+}
+.x{
+    position: absolute;
+    top: 30px;
+    left: 52px;
+}
+.x > li{
+    float: left;
+    position: relative;
+    width: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+}
+.y{
+    position: absolute;
+    top: 65px;
+    left: 35px;
+}
+.y > li{
+    height: 40px;
+    float: left;
+    clear: both;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.map{
+    position: absolute;
+    top:55px;
+    left: 53px;
+    float: left;
+    width: 400px;
+	height: 400px;
+	border: 1px solid #000;
+}
+.mapbox {
+	float: left;
+	width: 39px;
+	height: 39px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.diamond{
+    position: absolute;
+    left: 254px;
+    top: 255px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: #000;
+    z-index: 999;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.partdiamond{
+    position: absolute;
+    background-color: red;
+    width: 40px;
+    height: 10px;
+    border: 0;
+}
+.help{
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 50px;
+    z-index: -1;
+}
+.control{
+    position: relative;
+    width: 60%;
+    height: 60px;
+    left: 600px;
+    top: 300px;
+    float: left;
+}
+.control > button{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 0.5px solid blue;
+    cursor: pointer;
+}
+.control-group{
+    position: relative;
+    top: 10px;
+}
+.rowId{
+    float: left;
+    background-color: #555;
+    width: 20px;
+    height: 100px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+#area{
+    width: 200px;
+    height: 100px;
+    font-size: 17px;
+    font-weight: bold;
+	margin-left: 5px;
+	line-height: 20px;
+	font-size: 16px;
+	float: left;
+	height: 100px;
+}
+.partrow{
+    width: 100%;
+    
+}

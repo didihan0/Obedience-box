@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>小方块</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="box1">
+            <ul  class="x">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+             </ul>
+            <ul class="y">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+            <div class="map" id="map"></div>
+            <div class="diamond" id="diamond">
+                <div class="partdiamond" id="diamond"></div>
+            </div>
+        </div>
+        <div class="help">
+            <ol>
+                <li>可以输入以下指令(边界则不移动)</li>
+                <li>GO：向蓝色边所面向的方向前进一格</li>
+				<li>TUN LEF：向左转（逆时针旋转90度）</li>
+				<li>TUN RIG：向右转（顺时针旋转90度）</li>
+				<li>TUN BAC：向右转（旋转180度）</li>
+				<li>TRA LEF：向屏幕的左侧移动一格，方向不变</li>
+				<li>TRA TOP：向屏幕的上面移动一格，方向不变</li>
+				<li>TRA RIG：向屏幕的右侧移动一格，方向不变</li>
+				<li>TRA BOT：向屏幕的下面移动一格，方向不变</li>
+				<li>MOV LEF：方向转向屏幕左侧，并向屏幕的左侧移动一格</li>
+				<li>MOV TOP：方向转向屏幕上面，向屏幕的上面移动一格</li>
+				<li>MOV RIG：方向转向屏幕右侧，向屏幕的右侧移动一格</li>
+				<li>MOV BOT：方向转向屏幕下面，向屏幕的下面移动一格</li>
+            </ol>
+        </div>
+        <div class="control">
+            <button class="come" id="come">执行</button>
+            <button class="Delete" id="Delete">删除</button>
+            <div class="control-group">
+                    <div id="rowId" class="rowId"></div>
+                    <textarea  id="area" rows="5"></textarea>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js.js"></script>
+</html>
